@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PT Vega Dimas Mandiri - Konsultan Rekrutmen & Solusi Tenaga Kerja</title>
+    <meta name="description" content="PT Vega Dimas Mandiri membantu perusahaan menemukan talenta terbaik melalui layanan rekrutmen profesional, penyediaan tenaga kerja, pelatihan SDM, dan konsultasi ketenagakerjaan.">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="PT Vega Dimas Mandiri">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="canonical" href="https://vega-dimas-mandiri.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="id_ID">
+    <meta property="og:site_name" content="PT Vega Dimas Mandiri">
+    <meta property="og:title" content="PT Vega Dimas Mandiri - Rekrutmen & Solusi Tenaga Kerja">
+    <meta property="og:description" content="Temukan talenta terbaik dan optimalkan pengelolaan SDM bersama PT Vega Dimas Mandiri. Solusi rekrutmen dan ketenagakerjaan profesional untuk perusahaan Anda.">
+    <meta property="og:url" content="https://vega-dimas-mandiri.com/">
+    <meta property="og:image" content="https://vega-dimas-mandiri.com/assets/images/vdm-circle-logo.png">
+    <meta property="og:image:alt" content="Logo PT Vega Dimas Mandiri">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="PT Vega Dimas Mandiri - Rekrutmen & Solusi Tenaga Kerja">
+    <meta name="twitter:description" content="Temukan talenta terbaik dan optimalkan pengelolaan SDM bersama PT Vega Dimas Mandiri. Solusi rekrutmen dan ketenagakerjaan profesional untuk perusahaan Anda.">
+    <meta name="twitter:image" content="https://vega-dimas-mandiri.com/assets/images/vdm-circle-logo.png">
+    <link rel="icon" type="image/png" href="assets/images/vdm-circle-logo.png">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#eff6ff',
+                            100: '#dbeafe',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                            800: '#1e40af',
+                            900: '#1e3a8a',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+        }
+        .gradient-card {
+            background: linear-gradient(180deg, rgba(37, 99, 235, 0.05) 0%, rgba(124, 58, 237, 0.02) 100%);
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        .dark ::-webkit-scrollbar-track {
+            background: #0f172a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #3b82f6;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-slate-100 transition-colors duration-300">
+
+    <!-- Header / Navbar -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 transition-colors duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <a href="#" class="flex items-center space-x-3 group">
+                    <div class="w-10 h-10 rounded-xl gradient-bg flex items-center justify-center text-white text-xl font-bold shadow-lg shadow-blue-500/30 group-hover:scale-105 transition-transform duration-300">
+                        <img src="assets/images/vdm-logo.png" alt="Logo PT Vega Dimas Mandiri" class="w-8 h-8 object-contain">
+                    </div>
+                    <div class="flex flex-col min-w-0">
+                        <span class="text-[14px] sm:text-base font-extrabold tracking-tight text-slate-900 dark:text-white whitespace-nowrap">
+                            PT VEGA DIMAS MANDIRI
+                        </span>
+                        <span class="text-[8px] sm:text-[10px] font-semibold tracking-widest text-slate-500 uppercase -mt-1 whitespace-nowrap">
+                            Profesional Rekrutmen
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                    <a href="#beranda" class="text-slate-700 dark:text-slate-200 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Beranda</a>
+                    <a href="#tentang" class="text-slate-700 dark:text-slate-200 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Tentang Kami</a>
+                    <a href="#layanan" class="text-slate-700 dark:text-slate-200 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Layanan</a>
+                    <a href="#dokumentasi" class="text-slate-700 dark:text-slate-200 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Dokumentasi</a>
+                    <a href="#kontak" class="text-slate-700 dark:text-slate-200 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Kontak</a>
+                </nav>
+
+                <!-- Actions Right (Theme Toggle & CTA) -->
+                <div class="hidden md:flex items-center space-x-4">
+                    <!-- Theme Switcher -->
+                    <button id="themeToggle" class="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors focus:outline-none" aria-label="Toggle Theme">
+                        <i id="themeIcon" class="fa-solid fa-moon text-lg"></i>
+                    </button>
+                    <!-- CTA Consultation -->
+                    <a href="https://forms.gle/vh9xem8g9mcgQjFa9" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-xl gradient-bg text-white font-medium text-sm shadow-md shadow-blue-500/20 hover:shadow-lg hover:shadow-blue-500/40 hover:-translate-y-0.5 transition-all duration-200">
+                        Daftar Tenaga Kerja
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="flex items-center space-x-3 md:hidden">
+                    <button id="themeToggleMobile" class="p-2 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300">
+                        <i id="themeIconMobile" class="fa-solid fa-moon"></i>
+                    </button>
+                    <button id="mobileMenuBtn" class="p-2 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200 hover:text-blue-600">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu Dropdown -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 px-4 pt-2 pb-6 space-y-3">
+            <a href="#beranda" class="mobile-link block px-3 py-2 rounded-lg text-base font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800">Beranda</a>
+            <a href="#tentang" class="mobile-link block px-3 py-2 rounded-lg text-base font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800">Tentang Kami</a>
+            <a href="#layanan" class="mobile-link block px-3 py-2 rounded-lg text-base font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800">Layanan</a>
+            <a href="#dokumentasi" class="mobile-link block px-3 py-2 rounded-lg text-base font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800">Dokumentasi</a>
+            <a href="#kontak" class="mobile-link block px-3 py-2 rounded-lg text-base font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800">Kontak</a>
+            <button onclick="openModal('consultModal')" class="w-full mt-2 px-5 py-3 rounded-xl gradient-bg text-white font-medium text-center shadow-md">
+                Daftar Tenaga Kerja
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="beranda" class="relative pt-32 pb-20 md:pt-40 md:pb-32 overflow-hidden">
+        <!-- Background Decorative Orbs -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-blue-500/10 dark:bg-blue-500/20 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute top-1/3 right-10 w-[300px] h-[300px] bg-purple-500/10 dark:bg-purple-500/20 rounded-full blur-2xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Hero Text -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-blue-50 dark:bg-blue-950/60 border border-blue-200 dark:border-blue-800 text-blue-600 dark:text-blue-400 text-xs font-semibold tracking-wide">
+                        <span class="flex h-2 w-2 rounded-full bg-blue-600 animate-pulse"></span>
+                        <span>SOLUSI TENAGA KERJA & REKRUTMEN #1</span>
+                    </div>
+
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-900 dark:text-white leading-[1.15]">
+                        Mitra Profesional <span class="gradient-text">Rekrutmen</span> dan <span class="gradient-text">SDM</span>
+                    </h1>
+
+                    <p class="text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                        Kami membantu perusahaan dari berbagai skala menemukan talenta terbaik, memenuhi kebutuhan tenaga kerja, serta mengoptimalkan pengelolaan sumber daya manusia melalui layanan rekrutmen profesional dan solusi ketenagakerjaan yang terpercaya.
+                    </p>
+
+                    <!-- Hero Action Buttons -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                        <button onclick="window.location.href='mailto:admin.vdm.info@gmail.com'" class="w-full sm:w-auto px-8 py-4 rounded-xl gradient-bg text-white font-semibold text-base shadow-lg shadow-blue-500/25 hover:shadow-xl hover:shadow-blue-500/40 hover:-translate-y-1 transition-all text-center">
+                            Konsultasi Rekrutmen Anda <i class="fa-solid fa-arrow-right ml-2 text-sm"></i>
+                        </button>
+                        <a href="#layanan" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-200 font-semibold text-base border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-700 hover:-translate-y-1 transition-all text-center shadow-sm">
+                            Lihat Layanan <i class="fa-solid fa-circle-play ml-2 text-blue-600"></i>
+                        </a>
+                    </div>
+
+                    <!-- Client Trust Badges -->
+                    <div class="pt-8 border-t border-slate-200 dark:border-slate-800 flex flex-wrap items-center justify-center lg:justify-start gap-6 text-slate-400 dark:text-slate-500 text-sm font-semibold">
+                        <!-- <span>DIPERCAYA OLEH:</span>
+                        <div class="flex items-center space-x-6 opacity-70 hover:opacity-100 transition-opacity">
+                            <span class="hover:text-slate-700 dark:hover:text-slate-200 transition-colors"><i class="fa-brands fa-amazon text-2xl"></i></span>
+                            <span class="hover:text-slate-700 dark:hover:text-slate-200 transition-colors"><i class="fa-brands fa-microsoft text-2xl"></i></span>
+                            <span class="hover:text-slate-700 dark:hover:text-slate-200 transition-colors"><i class="fa-brands fa-google text-2xl"></i></span>
+                            <span class="hover:text-slate-700 dark:hover:text-slate-200 transition-colors"><i class="fa-brands fa-spotify text-2xl"></i></span>
+                        </div> -->
+                    </div>
+                </div>
+
+                <!-- Right Hero Illustration / Interactive Card -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative mx-auto max-w-md lg:max-w-none">
+                        <!-- Main Card -->
+                        <div class="bg-white dark:bg-slate-800/90 rounded-3xl p-6 sm:p-8 shadow-2xl border border-slate-200/80 dark:border-slate-700 backdrop-blur-xl relative z-10">
+                            <div class="flex items-center justify-between mb-6">
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                                    <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                                    <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                                </div>
+                            </div>
+
+                            <!-- Live Metric Widget -->
+                            <div class="space-y-5">
+                                <div class="bg-slate-50 dark:bg-slate-900/60 p-4 rounded-2xl border border-slate-100 dark:border-slate-800">
+                                    <div class="flex justify-between items-center mb-2">
+                                        <span class="text-xs font-medium text-slate-500 dark:text-slate-400">Tenaga Kerja Tersalurkan</span>
+                                        <span class="text-xs font-bold text-emerald-500">1800+</span>
+                                    </div>
+                                    <div class="w-full bg-slate-200 dark:bg-slate-700 h-2 rounded-full overflow-hidden">
+                                        <div class="bg-emerald-500 h-full rounded-full" style="width: 100%;"></div>
+                                    </div>
+                                </div>
+
+                                <div class="bg-slate-50 dark:bg-slate-900/60 p-4 rounded-2xl border border-slate-100 dark:border-slate-800">
+                                    <div class="flex justify-between items-center mb-2">
+                                        <span class="text-xs font-medium text-slate-500 dark:text-slate-400">Relasi Industri</span>
+                                        <span class="text-xs font-bold text-blue-500">40+</span>
+                                    </div>
+                                    <div class="w-full bg-slate-200 dark:bg-slate-700 h-2 rounded-full overflow-hidden">
+                                        <div class="bg-blue-600 h-full rounded-full" style="width: 100%;"></div>
+                                    </div>
+                                </div>
+
+                                <div class="p-4 rounded-2xl gradient-card border border-blue-100 dark:border-blue-900/40 flex items-center justify-between">
+                                    <div class="flex items-center space-x-3">
+                                        <div class="p-2.5 bg-blue-600 text-white rounded-xl">
+                                            <i class="fa-solid fa-rocket text-lg"></i>
+                                        </div>
+                                        <div>
+                                            <h4 class="text-sm font-bold text-slate-900 dark:text-white">Keberhasilan Penempatan</h4>
+                                            <p class="text-xs text-slate-500 dark:text-slate-400">Tahun 2023-2026</p>
+                                        </div>
+                                    </div>
+                                    <span class="text-2xl font-black text-blue-600 dark:text-blue-400">1800+</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Floating Accent Cards -->
+                        <div class="absolute -bottom-6 -left-6 bg-white dark:bg-slate-800 p-4 rounded-2xl shadow-xl border border-slate-100 dark:border-slate-700 flex items-center space-x-3 z-20 animate-bounce" style="animation-duration: 3s;">
+                            <div class="p-2 bg-emerald-100 dark:bg-emerald-950 text-emerald-600 rounded-lg">
+                                <i class="fa-solid fa-circle-check text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs font-bold text-slate-900 dark:text-white">Kepercayaan Klien</p>
+                                <p class="text-[11px] text-slate-500">98% Rating Kepuasan</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Counter Stats Section -->
+    <section class="py-12 bg-white dark:bg-slate-800/50 border-y border-slate-200 dark:border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div class="space-y-1">
+                    <h3 class="text-3xl sm:text-4xl font-extrabold gradient-text counter" data-target="3">0</h3>
+                    <p class="text-xs sm:text-sm font-medium text-slate-500 dark:text-slate-400">Tahun Pengalaman</p>
+                </div>
+                <div class="space-y-1">
+                    <h3 class="text-3xl sm:text-4xl font-extrabold gradient-text counter" data-target="1800">0</h3>
+                    <p class="text-xs sm:text-sm font-medium text-slate-500 dark:text-slate-400">Tenaga Kerja Tersalurkan</p>
+                </div>
+                <div class="space-y-1">
+                    <h3 class="text-3xl sm:text-4xl font-extrabold gradient-text counter" data-target="45">0</h3>
+                    <p class="text-xs sm:text-sm font-medium text-slate-500 dark:text-slate-400">Tenaga Ahli</p>
+                </div>
+                <div class="space-y-1">
+                    <h3 class="text-3xl sm:text-4xl font-extrabold gradient-text counter" data-target="98">0</h3>
+                    <p class="text-xs sm:text-sm font-medium text-slate-500 dark:text-slate-400">% Kepercayaan Klien</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="tentang" class="py-20 md:py-28 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Image Side with Overlay Grid -->
+                <div class="lg:col-span-5 relative self-start">
+                    <div class="relative rounded-3xl overflow-hidden shadow-2xl group border border-slate-200 dark:border-slate-800">
+                        <img src="assets/images/photo-1937404734-612x612.jpg" 
+                             alt="Vega Dimas Mandiri - Konsultan Rekrutmen & Solusi Tenaga Kerja" 
+                             class="w-full h-[420px] object-cover group-hover:scale-105 transition-transform duration-500"
+                             onerror="this.src='https://placehold.co/800x600/1e293b/ffffff?text=Nexus+Team'">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6 text-white">
+                            <span class="px-3 py-1 bg-blue-600 rounded-full text-xs font-semibold uppercase tracking-wider">Kantor Pusat - Tangerang</span>
+                            <h4 class="text-xl font-bold mt-2">Membangun Masa Depan Tenaga Kerja Indonesia</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text Side & Tab Navigation -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center space-x-2 text-blue-600 dark:text-blue-400 text-xs font-bold tracking-widest uppercase">
+                        <i class="fa-solid fa-building"></i>
+                        <span>Tentang PT Vega Dimas Mandiri</span>
+                    </div>
+
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white">
+                        Konsultan Rekrutmen & Solusi Tenaga Kerja
+                    </h2>
+
+                    <p class="text-slate-600 dark:text-slate-300 leading-relaxed">
+                        Didirikan pada tahun 2023, PT Vega Dimas Mandiri telah bertransformasi dari perusahaan penyalur kerja menjadi solusi tenaga kerja terkemuka. Kami menyediakan layanan rekrutmen profesional, pelatihan SDM, dan konsultasi ketenagakerjaan untuk membantu perusahaan menemukan talenta terbaik dan mengoptimalkan pengelolaan sumber daya manusia.
+                    </p>
+
+                    <!-- Tab Buttons for Vision, Mission, Values -->
+                    <div class="border-b border-slate-200 dark:border-slate-700 flex space-x-6">
+                        <button onclick="switchTab('visi')" id="tab-visi" class="about-tab border-b-2 border-blue-600 font-semibold text-blue-600 dark:text-blue-400 pb-3 text-sm transition-all">Visi Perusahaan</button>
+                        <button onclick="switchTab('misi')" id="tab-misi" class="about-tab border-b-2 border-transparent font-semibold text-slate-500 hover:text-slate-800 dark:hover:text-slate-200 pb-3 text-sm transition-all">Misi Utama</button>
+                        <button onclick="switchTab('nilai')" id="tab-nilai" class="about-tab border-b-2 border-transparent font-semibold text-slate-500 hover:text-slate-800 dark:hover:text-slate-200 pb-3 text-sm transition-all">Nilai Utama</button>
+                    </div>
+
+                    <!-- Tab Content Panels -->
+                    <div id="content-visi" class="tab-content py-2 space-y-3">
+                        <p class="text-slate-600 dark:text-slate-300">
+                            "Menjadi mitra outsourcing terdepan yang menghadirkan solusi inovatif dan esien dalam membantu klien untuk mencapai keunggulan operasional, produktivitas, dan pertumbuhan bisnis yang pesat"
+                        </p>
+                    </div>
+
+                    <div id="content-misi" class="tab-content hidden py-2 space-y-3">
+                        <ul class="space-y-2 text-slate-600 dark:text-slate-300">
+                            <li class="flex items-start space-x-2">
+                                <i class="fa-solid fa-check text-blue-600 mt-1"></i>
+                                <span>Memberikan pelayanan yang bermutu dengan memastikan tenaga kerja yang kompeten dan sesuai dengan kebutuhan klien.</span>
+                            </li>
+                            <li class="flex items-start space-x-2">
+                                <i class="fa-solid fa-check text-blue-600 mt-1"></i>
+                                <span>Pengelolaan sumber daya manusia yang efektif dengan memberikan tenaga kerja yang profesional, terlatih, dan cekatan.</span>
+                            </li>
+                            <li class="flex items-start space-x-2">
+                                <i class="fa-solid fa-check text-blue-600 mt-1"></i>
+                                <span>Membuat basis pencari kerja dan informasi lapangan yang memberikan manfaat kepada masyarakat maupun dunia usaha.</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div id="content-nilai" class="tab-content hidden py-2 grid grid-cols-2 gap-4">
+                        <div class="p-3 bg-slate-100 dark:bg-slate-800 rounded-xl">
+                            <h5 class="font-bold text-slate-900 dark:text-white text-sm">💡 Integritas & Profesionalisme</h5>
+                            <p class="text-xs text-slate-500 mt-1">Menjunjung tinggi kejujuran, etika kerja, dan profesionalisme dalam setiap proses rekrutmen dan penempatan tenaga kerja.</p>
+                        </div>
+                        <div class="p-3 bg-slate-100 dark:bg-slate-800 rounded-xl">
+                            <h5 class="font-bold text-slate-900 dark:text-white text-sm">🛡️ Kepercayaan</h5>
+                            <p class="text-xs text-slate-500 mt-1">Menjaga kepercayaan kandidat dan perusahaan klien sebagai prioritas utama.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="layanan" class="py-20 bg-slate-100/70 dark:bg-slate-800/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <span class="text-blue-600 dark:text-blue-400 font-bold text-xs uppercase tracking-widest">Layanan Unggulan</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white">
+                    Solusi Komprehensif Untuk Setiap Kebutuhan Tenaga Kerja Anda
+                </h2>
+                <p class="text-slate-600 dark:text-slate-400 text-base">
+                    Dari rekrutmen profesional hingga konsultasi ketenagakerjaan, kami menyediakan layanan yang dirancang untuk membantu perusahaan menemukan talenta terbaik dan mengoptimalkan pengelolaan sumber daya manusia.
+                </p>
+            </div>
+
+            <!-- Services Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+               <!-- Service Card 1 -->
+                <div class="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-sm hover:shadow-xl border border-slate-200/80 dark:border-slate-700 hover:-translate-y-1 transition-all group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-blue-50 dark:bg-blue-900/40 text-blue-600 dark:text-blue-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-blue-600 group-hover:text-white transition-all">
+                            <i class="fa-solid fa-user-check"></i>
+                        </div>
+
+                        <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">
+                            Penyaluran Tenaga Kerja
+                        </h3>
+
+                        <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed mb-6">
+                            Membantu perusahaan memenuhi kebutuhan tenaga kerja melalui proses rekrutmen, seleksi, dan penyaluran kandidat yang sesuai dengan kualifikasi serta kebutuhan operasional perusahaan.
+                        </p>
+                    </div>
+
+                    <!-- <button onclick="showServiceDetail('Penyaluran Tenaga Kerja', 'Kami membantu perusahaan menemukan kandidat yang sesuai melalui proses rekrutmen dan seleksi berdasarkan kualifikasi, kompetensi, serta kebutuhan posisi. Kandidat yang memenuhi persyaratan selanjutnya disalurkan kepada perusahaan untuk proses penerimaan kerja.')"
+                        class="inline-flex items-center text-sm font-semibold text-blue-600 dark:text-blue-400 hover:underline">
+                        Pelajari Selengkapnya
+                        <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                    </button> -->
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-sm hover:shadow-xl border border-slate-200/80 dark:border-slate-700 hover:-translate-y-1 transition-all group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-purple-50 dark:bg-purple-900/40 text-purple-600 dark:text-purple-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-purple-600 group-hover:text-white transition-all">
+                            <i class="fa-solid fa-file-contract"></i>
+                        </div>
+
+                        <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">
+                            Kontrak Kerja Sama
+                        </h3>
+
+                        <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed mb-6">
+                            Menyediakan solusi penyediaan dan pengelolaan tenaga kerja melalui kerja sama dengan perusahaan pengguna jasa. Karyawan ditempatkan sesuai kebutuhan operasional dengan skema hubungan kerja alih daya (outsourcing).
+                        </p>
+                    </div>
+
+                    <!-- <button onclick="showServiceDetail('Kontrak Kerja Sama', 'Kami menyediakan layanan tenaga kerja melalui skema kerja sama dengan perusahaan pengguna jasa. Pengelolaan hubungan kerja dilakukan melalui skema alih daya (outsourcing), dengan ketentuan hak, kewajiban, dan tanggung jawab para pihak yang diatur dalam perjanjian kerja sama sesuai peraturan yang berlaku.')"
+                        class="inline-flex items-center text-sm font-semibold text-purple-600 dark:text-purple-400 hover:underline">
+                        Pelajari Selengkapnya
+                        <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                    </button> -->
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-sm hover:shadow-xl border border-slate-200/80 dark:border-slate-700 hover:-translate-y-1 transition-all group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-emerald-50 dark:bg-emerald-900/40 text-emerald-600 dark:text-emerald-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-emerald-600 group-hover:text-white transition-all">
+                            <i class="fa-solid fa-people-arrows-left-right"></i>
+                        </div>
+
+                        <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">
+                            Alih Kelola Tenaga Kerja (Take Over)
+                        </h3>
+
+                        <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed mb-6">
+                            Memfasilitasi pengalihan pengelolaan tenaga kerja ke skema hubungan kerja yang disepakati, baik melalui alih daya (outsourcing) maupun pengangkatan sebagai karyawan langsung perusahaan pengguna jasa, sesuai ketentuan yang berlaku.
+                        </p>
+                    </div>
+
+                    <!-- <button onclick="showServiceDetail('Alih Kelola Tenaga Kerja (Take Over)', 'Kami memfasilitasi proses transisi pengelolaan tenaga kerja berdasarkan kebutuhan perusahaan dan kesepakatan para pihak. Skema dapat mencakup pengalihan ke hubungan kerja alih daya (outsourcing) atau proses penerimaan sebagai karyawan langsung perusahaan pengguna jasa. Setiap proses dilaksanakan dengan memperhatikan status hubungan kerja, hak karyawan, dan peraturan ketenagakerjaan yang berlaku.')"
+                        class="inline-flex items-center text-sm font-semibold text-emerald-600 dark:text-emerald-400 hover:underline">
+                        Pelajari Selengkapnya
+                        <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                    </button> -->
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Dokumentasi Section -->
+    <section id="dokumentasi" class="py-20 md:py-28">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-12">
+                <span class="text-blue-600 dark:text-blue-400 font-bold text-xs uppercase tracking-widest">Dokumentasi</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white">
+                    Dokumentasi Kegiatan Kami
+                </h2>
+                <p class="text-slate-600 dark:text-slate-400">
+                    Dokumentasi berbagai kegiatan PT Vega Dimas Mandiri dalam mendukung kebutuhan tenaga kerja perusahaan melalui layanan rekrutmen, penyaluran, dan pengelolaan sumber daya manusia.
+                </p>
+            </div>
+
+            <!-- Category Filter Buttons -->
+            <div class="flex flex-wrap justify-center gap-3 mb-12">
+                <button onclick="filterPortfolio('all')"
+                    class="port-btn active-port-btn px-5 py-2 rounded-full text-sm font-semibold bg-blue-600 text-white shadow-md transition-all">
+                    Semua Kegiatan
+                </button>
+                <button onclick="filterPortfolio('rekrutmen')"
+                    class="port-btn px-5 py-2 rounded-full text-sm font-semibold bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 transition-all">
+                    Rekrutmen
+                </button>
+                <button onclick="filterPortfolio('seleksi')"
+                    class="port-btn px-5 py-2 rounded-full text-sm font-semibold bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 transition-all">
+                    Seleksi Kandidat
+                </button>
+                <button onclick="filterPortfolio('penempatan')"
+                    class="port-btn px-5 py-2 rounded-full text-sm font-semibold bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 transition-all">
+                    Penempatan Tenaga Kerja
+                </button>
+            </div>
+
+            <!-- Portfolio Cards Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Activity 1: Recruitment -->
+                <div class="port-card rekrutmen bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200/80 dark:border-slate-700 shadow-sm hover:shadow-xl transition-all group">
+                    <div class="relative overflow-hidden h-52">
+                        <img src="assets/images/random-photo-1.jpg"
+                            alt="Kegiatan Rekrutmen Tenaga Kerja"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-6 space-y-3">
+                        <div class="flex items-center justify-between text-xs">
+                            <span class="px-2.5 py-1 bg-blue-100 dark:bg-blue-900/50 text-blue-600 dark:text-blue-300 font-bold rounded-md">
+                                Rekrutmen
+                            </span>
+                            <span class="text-slate-400">Kegiatan Perusahaan</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 dark:text-white group-hover:text-blue-600 transition-colors">
+                            Rekrutmen Tenaga Kerja
+                        </h3>
+                        <p class="text-sm text-slate-500 dark:text-slate-400 line-clamp-3">
+                            Proses pencarian dan penerimaan calon tenaga kerja sesuai dengan kebutuhan serta kualifikasi yang ditetapkan perusahaan.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Activity 2: Candidate Selection -->
+                <div class="port-card seleksi bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200/80 dark:border-slate-700 shadow-sm hover:shadow-xl transition-all group">
+                    <div class="relative overflow-hidden h-52">
+                        <img src="assets/images/random-photo-2.jpg"
+                            alt="Kegiatan Seleksi Kandidat"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-6 space-y-3">
+                        <div class="flex items-center justify-between text-xs">
+                            <span class="px-2.5 py-1 bg-purple-100 dark:bg-purple-900/50 text-purple-600 dark:text-purple-300 font-bold rounded-md">
+                                Seleksi
+                            </span>
+                            <span class="text-slate-400">Kegiatan Perusahaan</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 dark:text-white group-hover:text-blue-600 transition-colors">
+                            Seleksi dan Evaluasi Kandidat
+                        </h3>
+                        <p class="text-sm text-slate-500 dark:text-slate-400 line-clamp-3">
+                            Proses pemeriksaan persyaratan, wawancara, dan evaluasi kandidat untuk membantu memastikan kesesuaian dengan kebutuhan pekerjaan.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Activity 3: Workforce Placement -->
+                <div class="port-card penempatan bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200/80 dark:border-slate-700 shadow-sm hover:shadow-xl transition-all group">
+                    <div class="relative overflow-hidden h-52">
+                        <img src="assets/images/random-photo-3.jpg"
+                            alt="Kegiatan Penempatan Tenaga Kerja"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-6 space-y-3">
+                        <div class="flex items-center justify-between text-xs">
+                            <span class="px-2.5 py-1 bg-emerald-100 dark:bg-emerald-900/50 text-emerald-600 dark:text-emerald-300 font-bold rounded-md">
+                                Penempatan
+                            </span>
+                            <span class="text-slate-400">Kegiatan Perusahaan</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 dark:text-white group-hover:text-blue-600 transition-colors">
+                            Penempatan Tenaga Kerja
+                        </h3>
+                        <p class="text-sm text-slate-500 dark:text-slate-400 line-clamp-3">
+                            Dokumentasi proses penyaluran tenaga kerja kepada perusahaan pengguna sesuai kebutuhan posisi dan kualifikasi pekerjaan.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="kontak" class="py-20 bg-slate-100/70 dark:bg-slate-800/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12">
+                
+                <!-- Contact Info Side -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <span class="text-blue-600 dark:text-blue-400 font-bold text-xs uppercase tracking-widest">Hubungi Kami</span>
+                        <h2 class="text-3xl font-extrabold text-slate-900 dark:text-white mt-2">
+                            Mari Diskusikan Kebutuhan Tenaga Kerja Anda
+                        </h2>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm mt-3 leading-relaxed">
+                            Memiliki pertanyaan atau membutuhkan solusi tenaga kerja untuk perusahaan Anda? Tim PT Vega Dimas Mandiri siap membantu melalui layanan rekrutmen, penyaluran tenaga kerja, dan kerja sama pengelolaan sumber daya manusia secara profesional.
+                        </p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 rounded-xl gradient-bg text-white flex items-center justify-center text-lg shrink-0">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <h5 class="font-bold text-slate-900 dark:text-white text-sm">Alamat Kantor</h5>
+                                <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Jl. Pertamina No.81, Panongan, Kec. Panongan, Kabupaten Tangerang, Banten 15710</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 rounded-xl gradient-bg text-white flex items-center justify-center text-lg shrink-0">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h5 class="font-bold text-slate-900 dark:text-white text-sm">Email Resmi</h5>
+                                <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">admin.vdm.info@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 rounded-xl gradient-bg text-white flex items-center justify-center text-lg shrink-0">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <h5 class="font-bold text-slate-900 dark:text-white text-sm">Telepon & WhatsApp</h5>
+                                <p class="text-xs text-slate-500 dark:text-slate-400 mt-1"> +62 897-9309-817</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form Side -->
+                <div class="lg:col-span-7">
+                    <div class="overflow-hidden rounded-3xl border border-slate-200/80 dark:border-slate-700 shadow-xl">
+                        <iframe
+                            src="https://www.google.com/maps?q=-6.273976346036616,106.5218607972613&output=embed"
+                            title="Lokasi di Google Maps"
+                            class="w-full h-[400px]"
+                            style="border: 0;"
+                            allowfullscreen
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 pt-16 pb-8 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-slate-800">
+                
+                <!-- Brand Info -->
+                <div class="lg:col-span-2 space-y-4">
+                    <a href="#" class="flex items-center space-x-3">
+                        <div class="w-9 h-9 rounded-xl gradient-bg flex items-center justify-center">
+                            <img src="assets/images/vdm-logo.png" alt="Logo PT Vega Dimas Mandiri" class="w-7 h-7 object-contain">
+                        </div>
+                        <span class="text-xl font-extrabold tracking-tight text-white">PT VEGA DIMAS MANDIRI</span>
+                    </a>
+                    <p class="text-xs text-slate-400 leading-relaxed max-w-sm">
+                        Mitra terpercaya dalam penyediaan solusi tenaga kerja. Membantu perusahaan memenuhi kebutuhan SDM melalui layanan rekrutmen, penyaluran, dan pengelolaan tenaga kerja yang profesional, terpercaya, dan sesuai kebutuhan bisnis.
+                    </p>
+                    <!-- <div class="flex space-x-4 text-lg text-slate-400">
+                        <a href="#" class="hover:text-blue-500 transition-colors"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="hover:text-blue-400 transition-colors"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="hover:text-pink-500 transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="hover:text-blue-600 transition-colors"><i class="fa-brands fa-linkedin"></i></a>
+                    </div> -->
+                </div>
+
+                <!-- Navigation Links 1 -->
+                <div>
+                    <h5 class="text-white font-bold text-sm mb-4">Navigasi</h5>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#beranda" class="hover:text-white transition-colors">Beranda</a></li>
+                        <li><a href="#tentang" class="hover:text-white transition-colors">Tentang Kami</a></li>
+                        <li><a href="#layanan" class="hover:text-white transition-colors">Layanan</a></li>
+                        <li><a href="#dokumentasi" class="hover:text-white transition-colors">Dokumentasi</a></li>
+                        <li><a href="#kontak" class="hover:text-white transition-colors">Kontak</a></li>
+                    </ul>
+                </div>
+
+                <!-- Navigation Links 2 -->
+                <div>
+                    <h5 class="text-white font-bold text-sm mb-4">Layanan</h5>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#layanan" class="hover:text-white transition-colors">Penyaluran Tenaga Kerja</a></li>
+                        <li><a href="#layanan" class="hover:text-white transition-colors">Kontrak Kerja Sama</a></li>
+                        <li><a href="#layanan" class="hover:text-white transition-colors">Alih Kelola Tenaga Kerja (Take Over)</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div>
+                    <h5 class="text-white font-bold text-sm mb-4">Konsultasi</h5>
+                    <p class="text-xs text-slate-400 mb-3">Diskusikan kebutuhan rekrutmen dan penyediaan tenaga kerja untuk perusahaan Anda bersama tim VDM.</p>
+                    <div class="flex flex-col space-y-2">
+                        <button onclick="window.location.href='mailto:admin.vdm.info@gmail.com'" class="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold text-xs rounded-lg transition-colors">Kirim Email</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="pt-8 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500">
+                <p>&copy; 2026 PT Vega Dimas Mandiri. Hak Cipta Dilindungi Undang-Undang.</p>
+                <div class="flex space-x-6 mt-4 sm:mt-0">
+                    <a href="#" class="hover:text-slate-400">Kebijakan Privasi</a>
+                    <a href="#" class="hover:text-slate-400">Syarat & Ketentuan</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 1. Dark Mode Management
+        const themeToggleBtn = document.getElementById('themeToggle');
+        const themeToggleMobile = document.getElementById('themeToggleMobile');
+        const themeIcon = document.getElementById('themeIcon');
+        const themeIconMobile = document.getElementById('themeIconMobile');
+
+        function toggleTheme() {
+            if (document.documentElement.classList.contains('dark')) {
+                document.documentElement.classList.remove('dark');
+                localStorage.setItem('theme', 'light');
+                updateThemeIcons(false);
+            } else {
+                document.documentElement.classList.add('dark');
+                localStorage.setItem('theme', 'dark');
+                updateThemeIcons(true);
+            }
+        }
+
+        function updateThemeIcons(isDark) {
+            const iconClass = isDark ? 'fa-sun' : 'fa-moon';
+            if (themeIcon) themeIcon.className = `fa-solid ${iconClass} text-lg`;
+            if (themeIconMobile) themeIconMobile.className = `fa-solid ${iconClass}`;
+        }
+
+        // Initialize Theme from Saved Preference or System Standard
+        if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+            updateThemeIcons(true);
+        } else {
+            document.documentElement.classList.remove('dark');
+            updateThemeIcons(false);
+        }
+
+        if (themeToggleBtn) themeToggleBtn.addEventListener('click', toggleTheme);
+        if (themeToggleMobile) themeToggleMobile.addEventListener('click', toggleTheme);
+
+        // 2. Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        if (mobileMenuBtn) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+
+        document.querySelectorAll('.mobile-link').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // 3. About Us Tabs Handler
+        function switchTab(tabKey) {
+            document.querySelectorAll('.about-tab').forEach(tab => {
+                tab.classList.remove('border-blue-600', 'text-blue-600', 'dark:text-blue-400');
+                tab.classList.add('border-transparent', 'text-slate-500');
+            });
+
+            document.querySelectorAll('.tab-content').forEach(content => {
+                content.classList.add('hidden');
+            });
+
+            const activeTab = document.getElementById(`tab-${tabKey}`);
+            const activeContent = document.getElementById(`content-${tabKey}`);
+
+            if (activeTab) {
+                activeTab.classList.add('border-blue-600', 'text-blue-600', 'dark:text-blue-400');
+                activeTab.classList.remove('border-transparent', 'text-slate-500');
+            }
+            if (activeContent) {
+                activeContent.classList.remove('hidden');
+            }
+        }
+
+        // 4. Portfolio Filter Logic
+        function filterPortfolio(category) {
+            const buttons = document.querySelectorAll('.port-btn');
+            buttons.forEach(btn => {
+                btn.classList.remove('bg-blue-600', 'text-white', 'shadow-md');
+                btn.classList.add('bg-slate-100', 'dark:bg-slate-800', 'text-slate-600', 'dark:text-slate-300');
+            });
+
+            event.currentTarget.classList.remove('bg-slate-100', 'dark:bg-slate-800', 'text-slate-600', 'dark:text-slate-300');
+            event.currentTarget.classList.add('bg-blue-600', 'text-white', 'shadow-md');
+
+            const cards = document.querySelectorAll('.port-card');
+            cards.forEach(card => {
+                if (category === 'all' || card.classList.contains(category)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        // 6. FAQ Accordion Toggle
+        function toggleFaq(faqId) {
+            const element = document.getElementById(faqId);
+            const icon = document.getElementById(`icon-${faqId}`);
+
+            if (element.classList.contains('hidden')) {
+                element.classList.remove('hidden');
+                icon.style.transform = 'rotate(180deg)';
+            } else {
+                element.classList.add('hidden');
+                icon.style.transform = 'rotate(0deg)';
+            }
+        }
+
+        // 7. Service Detail Modal
+        function showServiceDetail(title, description) {
+            document.getElementById('serviceModalTitle').innerText = title;
+            document.getElementById('serviceModalDesc').innerText = description;
+            openModal('serviceModal');
+        }
+
+        // 8. General Modal Helper Functions
+        function openModal(id) {
+            const modal = document.getElementById(id);
+            if (modal) modal.classList.remove('hidden');
+        }
+
+        function closeModal(id) {
+            const modal = document.getElementById(id);
+            if (modal) modal.classList.add('hidden');
+        }
+
+        // 9. Form Submission Handling & Custom Toasts
+        function showToast(message) {
+            const toast = document.getElementById('toast');
+            const toastMsg = document.getElementById('toastMsg');
+            toastMsg.innerText = message;
+            toast.classList.remove('hidden');
+            setTimeout(() => {
+                toast.classList.add('hidden');
+            }, 3500);
+        }
+
+        function handleContactSubmit(e) {
+            e.preventDefault();
+            e.target.reset();
+            showToast('Pesan Anda telah berhasil terkirim!');
+        }
+
+        function handleConsultModalSubmit(e) {
+            e.preventDefault();
+            closeModal('consultModal');
+            e.target.reset();
+            showToast('Jadwal konsultasi berhasil dikonfirmasi!');
+        }
+
+        function subscribeNewsletter() {
+            showToast('Terima kasih telah berlangganan newsletter kami!');
+        }
+
+        // 10. Number Counter Animation
+        function animateCounters() {
+            const counters = document.querySelectorAll('.counter');
+            counters.forEach(counter => {
+                const target = +counter.getAttribute('data-target');
+                let count = 0;
+                const speed = target / 50;
+
+                const updateCount = () => {
+                    count += speed;
+                    if (count < target) {
+                        counter.innerText = Math.ceil(count);
+                        setTimeout(updateCount, 30);
+                    } else {
+                        counter.innerText = target + '+';
+                    }
+                };
+                updateCount();
+            });
+        }
+
+        // Trigger Counter Animation on Scroll Into View
+        let animated = false;
+        window.addEventListener('scroll', () => {
+            const counterSection = document.querySelector('.counter');
+            if (counterSection) {
+                const pos = counterSection.getBoundingClientRect().top;
+                if (pos < window.innerHeight && !animated) {
+                    animateCounters();
+                    animated = true;
+                }
+            }
+        });
+    </script>
+</body>
+</html>
